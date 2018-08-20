@@ -1,0 +1,44 @@
+// Variables
+
+$white: #fff;
+$gray-light: #f1f4f6;
+$gray-dark: #83899c;
+$black: #071339;
+
+$primary: #7cc680;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1328px
+) !default;
+
+
+//Spacing
+
+$spacer: 1rem;
+
+
+// Navbar
+
+$navbar-padding-y:                  $spacer;
+$navbar-padding-x:                  0;
