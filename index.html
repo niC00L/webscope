@@ -34,10 +34,10 @@
 <body id="page-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-xs navbar-light fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-xs navbar-light" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img src="/img/logo.svg" alt="Webscope Logo" />
+            <img src="img/logo.svg" alt="Webscope Logo" />
         </a> 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -69,15 +69,21 @@
     </div>
 </nav>
 
-<header id="home" class="masthead text-left text-white d-flex">
-    <div class="container my-auto text-center text-md-left">
+<header id="home" class="masthead text-white d-flex container">
+    <div class="masthead__background">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/homepage-mobile.jpg">
+          <img src="img/homepage-desktop.jpg" alt="Guy with laptop">
+        </picture>
+    </div>
+    <div class="masthead__content my-auto text-center text-lg-left">
         <div class="row">
-            <div class="col-lg-8">
-                <h1 class="">
-                    <strong>We create front-end for enterprises</strong>
+            <div class="col-lg-6 col-xl-7">
+                <h1 class="masthead__heading">
+                    We create front-end for enterprises
                 </h1>
-                <p class="text-faded mb-5">Scale up with best technology available</p>
-                <a class="btn btn-light btn-xl" href="#">Explore</a>
+                <p class="masthead__text text-faded">Scale up with best technology available</p>
+                <a class="btn btn-light" href="#">Explore</a>
             </div>
         </div>
     </div>

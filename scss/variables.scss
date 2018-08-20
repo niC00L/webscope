@@ -1,3 +1,9 @@
+// Unchanged
+$border-radius:               .25rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-sm:            .2rem !default;
+
+
 // Variables
 
 $white: #fff;
@@ -26,8 +32,7 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  
   lg: 960px,
   xl: 1328px
 ) !default;
@@ -42,3 +47,15 @@ $spacer: 1rem;
 
 $navbar-padding-y:                  $spacer;
 $navbar-padding-x:                  0;
+
+
+// Buttons
+
+$btn-border-radius:           $border-radius/2 ;
+$btn-border-radius-lg:        $border-radius-lg/2 ;
+
+$btn-padding-y:               .5rem;
+$btn-padding-x:               2.5rem;
+
+$btn-font-weight:             600;
+$btn-border-radius-sm:        $border-radius-sm/2 ;

@@ -12,6 +12,11 @@ html {
   height: 100%;
 }
 
+.btn {
+  text-transform: uppercase;
+  font-size: .875em;
+}
+
 body {
   @include serif-font;
 }
