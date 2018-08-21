@@ -15,6 +15,14 @@
     }
   });
 
+$('#mainNav').on('show.bs.collapse', function () {
+  $('#mainNav').addClass('open');
+});
+
+$('#mainNav').on('hide.bs.collapse', function () {
+  $('#mainNav').removeClass('open');
+});
+
 if ($(window).scrollTop() >= $('#home').height()-100) {
       $('.back-to-top').addClass('visible');
     } else {

@@ -3,14 +3,54 @@
   background-color: $white;
   @include sans-serif-font;
   @include transition-all;
+
+  .navbar-brand {position: relative;}
+
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .logo--white {opacity: 0;}
+
+  &.open {
+    background-color: $black;
+
+    .logo--black {opacity: 0;}
+    .logo--white {opacity: 1;}
+
+    .navbar-toggler {
+      color: $white;
+      .line {
+        position: absolute;
+        top: .5em;
+        left: .25em;
+        &:first-child {transform: rotate(45deg);}
+        &:nth-child(2) {display: none;}
+        &:last-child {transform: rotate(-45deg);}
+      }
+    }
+  }
+
   .navbar-nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: calc(100vh - 2rem - 38px);
+    @include media-breakpoint-up(lg) {
+      padding-left: 16.25rem;
+      padding-right: 16.25rem;
+      height: calc(100vh - 7rem - 30px);
+      text-align: right;
+    }
+
     > li.nav-item {
-       > a.nav-link,
+      > a.nav-link,
       > a.nav-link:focus {
-        font-size: .9rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $black;
+        color: $white;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.88;
         &:hover {
           color: $primary;
         }
@@ -21,11 +61,37 @@
             background-color: transparent;
           }
         }
+
+        @include media-breakpoint-up(lg) {
+          font-size: 3.75rem;
+          line-height: 1.33;
+        }
       }
     }
   }
-  .navbar-toggler {border: none;}
+  .navbar-toggler {
+    border: none;
+    color: $black;
+  }
   @include media-breakpoint-up(lg) {
     padding: 3.5rem 0;
+  }
+}
+
+.navbar-toggler {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+
+  .line {
+    display: block;
+    width: 1em;
+    height: .1em;
+    background-color: currentColor;
+    margin: .2em auto;
+    transition: .2s;
   }
 }

@@ -9,7 +9,7 @@
   }
 
   &__text {
-	  @include media-brakpoint-down(lg) {
+	  @include media-breakpoint-down(lg) {
 	  	padding-left: 1rem;
 	  	padding-right: 1rem;
   	}
