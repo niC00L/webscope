@@ -1,9 +1,28 @@
 // Global styling for this template
 
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+}
+
 .section-gray {
-  min-height: 38rem;
+  min-height: 37rem;
   background-color: $gray-light;
   border-radius: $border-radius;  
+}
+
+.hire-us a {
+  font-size: 1.5rem;
+  
+}
+
+a {
+  font-weight: 600;
+  font-size: .875em;
 }
 
 body,
@@ -29,13 +48,29 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4
+h5, .h5
+h6, .h6{
   @include sans-serif-font;
+  color: $black;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  @include media-breakpoint-up(lg) {font-size: 3.75rem;}
+}
+
+h2, .h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 2rem;
+    font-size: 3.75rem;
+  }
 }
 
 .bg-primary {
@@ -48,10 +83,6 @@ h6 {
 
 .text-faded {
   color: fade-out($white, .3);
-}
-
-.section-heading {
-  margin-top: 0;
 }
 
 ::-moz-selection {

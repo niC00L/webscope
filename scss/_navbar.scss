@@ -25,7 +25,7 @@
     }
   }
   .navbar-toggler {border: none;}
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     padding: 3.5rem 0;
   }
 }

@@ -41,7 +41,7 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
   .masthead {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -51,7 +51,7 @@
   }
 }
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-up(lg) {
   .masthead {
     padding-left: 6.8rem;
     padding-right: 6.8rem;
