@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html')
+
+<body>
+
+<!-- Navigation -->
+@@include('components/navbar.html', {
+    "title": "Our process",
+    "active": "process"
+})
+
+<header class="hero container text-center text-lg-left">
+    <div class="hero__background">
+        <picture>
+          <!-- <source media="(max-width: 767px)" srcset="img/homepage-mobile.jpg">
+          <img src="img/homepage-desktop.jpg" alt="Guy with laptop"> -->
+        </picture>
+    </div>
+    <div class="hero__content">
+        <div class="row">
+            <div class="col-lg-10 col-xl-7">
+                <h1 class="hero__heading">Process makes projects successful</h1>
+                <p class="hero__text">The main key is to understand our client</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+@@include('components/footer.html')
+
+</body>
+
+</html>

@@ -8643,6 +8643,8 @@ img::-moz-selection {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 #mainNav .navbar-brand {
@@ -8668,8 +8670,10 @@ img::-moz-selection {
   opacity: 0;
 }
 
-#mainNav.open .logo--white {
-  opacity: 1;
+@media (min-width: 992px) {
+  #mainNav.open .logo--white {
+    opacity: 1;
+  }
 }
 
 #mainNav.open .navbar-toggler {
@@ -8733,7 +8737,7 @@ img::-moz-selection {
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1440px) {
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     font-size: 3.75rem;
@@ -8749,6 +8753,18 @@ img::-moz-selection {
 @media (min-width: 992px) {
   #mainNav {
     padding: 3.5rem 0;
+  }
+}
+
+.navbar-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .875rem;
+}
+
+@media (max-width: 1439.98px) {
+  .navbar-title {
+    display: none;
   }
 }
 
@@ -8770,20 +8786,32 @@ img::-moz-selection {
   transition: .2s;
 }
 
-.masthead {
+.hero {
   position: relative;
+  overflow: hidden;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-top: 13.3rem;
+    padding-bottom: 13.3rem;
+  }
+}
+
+.hero--masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
-  .masthead {
+  .hero--masthead {
     border-radius: 0.25rem;
   }
 }
 
-.masthead__background {
+.hero__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -8791,53 +8819,56 @@ img::-moz-selection {
   bottom: 0;
 }
 
-.masthead__background img {
+.hero__background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.masthead__content {
+.hero__content {
   width: 100%;
 }
 
-.masthead__heading {
+.hero__heading {
   margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
   line-height: 1;
 }
 
-.masthead__text {
+.hero__text {
   margin: 0 auto 2.5rem auto;
   font-size: 1rem;
   line-height: 1.5em;
 }
 
 @media (max-width: 991.98px) {
-  .masthead__text {
+  .hero__text {
     width: 60%;
   }
 }
 
+@media (min-width: 992px) {
+  .hero__text {
+    font-size: 1.25rem;
+  }
+}
+
 @media (min-width: 768px) {
-  .masthead {
+  .hero {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .masthead__text {
+  .hero__text {
     margin-left: 0;
   }
 }
 
 @media (min-width: 992px) {
-  .masthead {
+  .hero {
     padding-left: 6.8rem;
     padding-right: 6.8rem;
   }
-  .masthead__heading {
+  .hero__heading {
     margin-bottom: 2rem;
-    font-size: 3.75rem;
   }
 }
 
