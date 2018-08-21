@@ -2,4 +2,10 @@
 
 .feature {
 	text-align: center;
+
+	&__icon {margin-bottom: 1rem;}
+
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 2.5rem;
+	}
 }
