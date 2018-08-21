@@ -8489,25 +8489,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-@media (min-width: 992px) {
-  .section {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
-  }
-}
-
-.section-gray {
-  min-height: 37rem;
-  background-color: #f1f4f6;
-  background-image: linear-gradient(241deg, #f1f4f6, #fff);
-  border-radius: 0.25rem;
-}
-
 .brands {
   padding-bottom: 1rem;
 }
@@ -8592,7 +8573,7 @@ h2, .h2 {
 @media (min-width: 992px) {
   h2, .h2 {
     margin-bottom: 2rem;
-    font-size: 3.75rem;
+    font-size: 3rem;
   }
 }
 
@@ -8628,6 +8609,30 @@ img::selection {
 img::-moz-selection {
   color: #fff;
   background: transparent;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+}
+
+.section__text {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-gray {
+  min-height: 37rem;
+  background-color: #f1f4f6;
+  background-image: linear-gradient(241deg, #f1f4f6, #fff);
+  border-radius: 0.25rem;
 }
 
 #mainNav {
