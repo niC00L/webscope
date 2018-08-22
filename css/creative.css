@@ -8623,11 +8623,52 @@ img::-moz-selection {
   }
 }
 
+.section__icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.5rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  background-color: #f1f4f6;
+}
+
+@media (min-width: 992px) {
+  .section__icon {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+  }
+}
+
+.section__text {
+  line-height: 1.5;
+}
+
 @media (max-width: 1439.98px) {
   .section__text {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.section--small {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.section--small .section__heading {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .section--small .section__heading {
+    font-size: 2rem;
+  }
+}
+
+.section--small .section__text {
+  line-height: 1.75;
 }
 
 .section-gray {
