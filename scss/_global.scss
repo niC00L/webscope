@@ -74,6 +74,8 @@ h2, .h2 {
   }
 }
 
+a:hover {color: $primary !important;}
+
 .bg-primary {
   background-color: $primary !important;
 }
@@ -106,4 +108,15 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+
+.triangle {
+  background-image: url(../img/triangle.svg);
+  background-repeat: no-repeat;
+  background-position: 160% 0;
+  background-size: 75%;
+  @include media-breakpoint-up(lg) {
+    background-position: top right;
+    background-size: auto;
+  }
 }

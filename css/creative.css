@@ -8577,6 +8577,10 @@ h2, .h2 {
   }
 }
 
+a:hover {
+  color: #7cc680 !important;
+}
+
 .bg-primary {
   background-color: #7cc680 !important;
 }
@@ -8609,6 +8613,20 @@ img::selection {
 img::-moz-selection {
   color: #fff;
   background: transparent;
+}
+
+.triangle {
+  background-image: url(../img/triangle.svg);
+  background-repeat: no-repeat;
+  background-position: 160% 0;
+  background-size: 75%;
+}
+
+@media (min-width: 992px) {
+  .triangle {
+    background-position: top right;
+    background-size: auto;
+  }
 }
 
 .section {
@@ -8799,14 +8817,16 @@ img::-moz-selection {
   }
 }
 
-.navbar-title {
-  text-transform: uppercase;
+.navbar-title, .navbar-title a {
+  color: #83899c;
   font-weight: 600;
   font-size: .875rem;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media (max-width: 1439.98px) {
-  .navbar-title {
+  .navbar-title, .navbar-title a {
     display: none;
   }
 }
@@ -8932,6 +8952,99 @@ img::-moz-selection {
 .feature__icon {
   flex: 1 0 auto;
   margin-bottom: 1rem;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.project, .project * {
+  transition: .2s;
+}
+
+@media (min-width: 992px) {
+  .project {
+    padding: 2rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+.project:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+  transition: .2s;
+}
+
+.project:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.project:hover:before {
+  opacity: .1;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project__category {
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+
+.project__image {
+  flex: 1 0 auto;
+  text-align: center;
+  height: 21rem;
+  line-height: 21rem;
+}
+
+@media (min-width: 992px) {
+  .project__image {
+    height: 27.6rem;
+    line-height: 27.6rem;
+  }
+}
+
+.project img {
+  transform: scale(1);
+}
+
+.project__title {
+  margin-bottom: .5rem;
+  color: currentColor;
+  font-size: 2rem;
+}
+
+.project__technologies {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.works-wrapper {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .works-wrapper {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
 
 footer {

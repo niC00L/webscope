@@ -83,11 +83,15 @@
 }
 
 .navbar-title {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: .875rem;
-  @include media-breakpoint-down(lg) {
-    display: none;
+  &, & a {
+    color: $gray-dark;
+    font-weight: 600;
+    font-size: .875rem;    
+    text-transform: uppercase;
+    text-decoration: none;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
 }
 

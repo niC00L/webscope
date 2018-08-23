@@ -1,0 +1,71 @@
+// Projects
+.project {
+	position: relative;
+	display: flex;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+	flex-direction: column;
+	color: $white;
+	border-radius: $border-radius * 2;
+	overflow: hidden;
+	&, & * {transition: .2s;}
+
+	@include media-breakpoint-up(lg) {
+		padding: 2rem;
+		margin-bottom: 1.875rem;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: black;
+		opacity: 0;
+		transition: .2s;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+		&:before {opacity: .1}
+		img {transform: scale(1.1)}
+	}
+
+	&__category {
+		font-size: .875rem;
+		text-transform: uppercase;
+	}
+	&__image {
+		flex: 1 0 auto;
+		text-align: center;
+		height: 21rem;
+		line-height: 21rem;
+		@include media-breakpoint-up(lg) {
+			height: 27.6rem;
+			line-height: 27.6rem;
+		}
+	}
+	img {transform: scale(1)}
+	&__title {
+		margin-bottom: .5rem;
+		color: currentColor;
+		font-size: 2rem;
+	}
+	&__technologies {
+		margin-bottom: 0;
+		font-size: 1rem;
+	}
+}
+
+.works-wrapper {
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	@include media-breakpoint-up(lg) {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+
+}

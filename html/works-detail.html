@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {"title": "Opoint AS"})
+
+<body>
+
+<!-- Navigation -->
+@@include('components/navbar.html', {
+    "title": "<a href='works.html'>Works</a>",
+    "active": "works"
+})
+
+<header class="hero container text-center text-lg-left triangle">
+    <div class="hero__content">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8">
+                <h1 class="hero__heading">Opoint AS </br>
+                    Media intelligence portal</h1>
+                <p class="hero__text">Enterprise</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Communication -->
+<div class="container px-0">
+    @@include('components/picture.html', {
+        "img-mobile": "img/works/opoint/banner-mobile.jpg",
+        "img-desktop": "img/works/opoint/banner.jpg",
+        "alt": "communication"
+    })
+</div>
+@@include('components/section.html', {
+    "class": "section--small container",
+    "icon": "",
+    "heading": "About",
+    "text": "Opoint is a media monitoring software company, selling their technical solution to worldwide. They been on the market for around 25 years. Their solution was helping big companies to track their on-line presence across web. "
+})
+
+<div class="container">
+@@include('components/section.html', {
+    "class": "section--small section-gray",
+    "icon": "",
+    "heading": "Problem",
+    "text": "20+ years old media monitoring portal. Slow functionality a numerous technical issues made it hard and expensive to maintain.  "
+})    
+</div>
+
+image
+
+@@include('components/section.html', {
+    "class": "section--small container",
+    "icon": "",
+    "heading": "Our solution",
+    "text": "We helped to migrate it from the old PHP-jQuery stack to Django + Django REST framework + React/Redux. This continual change improve the overall quality of the system making it fast, stable and able to integrate and sync with various third party tools. Also maintenance of the portal is thee time cheaper than before. "
+})
+
+@@include('components/footer.html')
+
+</body>
+
+</html>
