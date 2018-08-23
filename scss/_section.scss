@@ -32,8 +32,10 @@
   }
 
   &--small {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    @include media-breakpoint-up(lg) {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
     .section__heading {
       font-size: 1.5rem;      
       @include media-breakpoint-up(lg) {
