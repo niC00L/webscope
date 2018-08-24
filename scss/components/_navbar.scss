@@ -35,6 +35,8 @@
         &:last-child {transform: rotate(-45deg);}
       }
     }
+
+    .navbar-title {opacity: 0;}
   }
 
   .navbar-nav {
@@ -91,6 +93,10 @@
     text-decoration: none;
     @include media-breakpoint-down(lg) {
       display: none;
+    }
+    img {
+      margin-right: .57em;
+      vertical-align: baseline;
     }
   }
 }
