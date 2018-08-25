@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {"title": "Contact us"})
+
+<body>
+
+<!-- Navigation -->
+@@include('components/navbar.html', {
+    "title": "Contact us",
+    "active": "contact"
+})
+
+<header class="hero container text-center text-lg-left triangle">
+    <div class="hero__content">
+        <div class="row">
+            <div class="col-lg-10 col-xl-7">
+                <h1 class="hero__heading">Feel free to ask anything.</h1>
+                <p class="hero__text">We are happy to hear from you, just drop us a line.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="section section--small container section--gray mb-4">
+    <div class="row justify-content-center">
+        <div class="col-11 col-md-9 col-lg-7 col-xl-5 text-center">
+            <h2 class="section__heading section__heading">Our office</h2>
+        </div>
+        <div class="col-12 col-xl-10">
+            <div class="row text-center mb-5 pb-4">
+                <p class="col-lg-4">
+                    <span class="font-weight-bold">Webscope s.r.o. </span> <br/>
+                    Moravské náměstí 127/3 <br/>
+                    602 00 Brno
+                </p>
+                <p class="col-lg-4">
+                    <a href="mailto:hello@webscope.io">hello@webscope.io</a> <br/>
+                    <a class="text-gray" href="tel:+421948504395">+421 948 504 395</a>
+                </p>
+                <p class="col-lg-4">
+                    Reg. no: 04114833 <br/>
+                    VAT ID: CZ04114833
+                </p>
+            </div>
+            <img class="img-fluid" src="img/map.jpg">
+        </div>
+    </div>
+</section> 
+
+<section class="custom-components section section--small section--dark container mb-lg-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-6 col-xl-5 text-center">
+            <h2 class="section__heading">Contact us</h2> 
+            <p class="text-faded">
+                Sign up for our newsletter
+            </p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input type="text" class="form-control" id="name"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email"/>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <input type="text" class="form-control" id="message"/>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form>
+        </div>
+    </div>
+</section> 
+
+@@include('components/footer.html')
+
+</body>
+
+</html>

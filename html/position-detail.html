@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {"title": "Javascript developer"})
+
+<body>
+
+<!-- Navigation -->
+@@include('components/navbar.html', {
+    "title": "<a href='about.html'><img class='icon' src='img/arrow-back.svg' /> About us</a>",
+    "active": "about"
+})
+
+<header class="hero container text-center text-lg-left triangle">
+    <div class="hero__content ">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9 text-center">
+                <h1 class="hero__heading">Javascript <br />developer</h1>
+                <p class="hero__text">Brno - Full-time, Part-time, Internship</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="custom-components section container section--gray">
+    <div class="row justify-content-center">
+        <div class="col-11  col-xl-7 text-center">
+            <p class="section__text">
+                Do you he a passion for developing SPA applications in Javascript? Do you like using the latest tools such as React, Redux, Angular, Babel.js or Webpack? We are looking for engineers to help us expand our team. We work on global international projects mostly for big enterprise clients and we plan to start working on our own project.
+            </p>
+        </div>
+    </div>
+</section> 
+
+<section class="custom-components section section--small section--dark container mb-lg-4">
+    <div class="row justify-content-center">
+        <div class="col-xl-10 text-center">
+            <h2 class="section__heading">Want to work with us?</h2>
+            <div class="row py-5 mb-4">
+                <div class="col-lg-4">
+                    <div class="position">
+                        <div class="position__head">                        
+                            <h3 class="position__title text-white">Javascript<br/> developer</h3>
+                            <p class="position__skills">React, Angular.js</p>
+                        </div>
+                        <div class="position__footer">
+                            <p class="position__type">Full-time, Part-time, Intership</p>
+                            <p class="position__location">Brno, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="position">
+                        <div class="position__head">                        
+                            <h3 class="position__title text-white">HTML <br/> coder</h3>
+                            <p class="position__skills">CSS, HTML</p>
+                        </div>
+                        <div class="position__footer">
+                            <p class="position__type">Full-time, Part-time, Intership</p>
+                            <p class="position__location">Brno, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="position">
+                        <div class="position__head">                        
+                            <h3 class="position__title text-white">iOS<br/> developer</h3>
+                            <p class="position__skills">Swift</p>
+                        </div>
+                        <div class="position__footer">
+                            <p class="position__type">Full-time, Part-time, Intership</p>
+                            <p class="position__location">Brno, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-faded">
+                Counldn’t find a job you were looking for? <br/>
+                Email us at <a href="mailto:careers@webscope.io">careers@webscope.io</a>.
+            </p>
+        </div>
+    </div>
+</section> 
+
+@@include('components/footer.html')
+
+</body>
+
+</html>

@@ -40,11 +40,18 @@ footer {
 	display: flex; 
 	flex-direction: column;
 	justify-content: space-between;
+	color: $white;
 	height: 25rem;
 	padding: 1.5rem;
 	text-align: left;
 	background-color: rgba($white, .1);
 	border-radius: $border-radius;
+
+	&:hover {
+		color: $white !important;
+		text-decoration: none;
+		background-color: rgba($white, .2);
+	}
 
 	@include media-breakpoint-up(lg) {
 		height: 28.13rem;
