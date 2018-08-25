@@ -93,11 +93,7 @@
     text-decoration: none;
     @include media-breakpoint-down(lg) {
       display: none;
-    }
-    img {
-      margin-right: .57em;
-      vertical-align: baseline;
-    }
+    }    
   }
 }
 

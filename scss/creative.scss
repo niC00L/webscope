@@ -35,3 +35,47 @@ footer {
 		padding-right: 1rem;
 	}
 }
+
+.position {
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	height: 25rem;
+	padding: 1.5rem;
+	text-align: left;
+	background-color: rgba($white, .1);
+	border-radius: $border-radius;
+
+	@include media-breakpoint-up(lg) {
+		height: 28.13rem;
+		padding: 2rem;
+	}
+
+	&__title {
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		line-height: 1.33;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 2rem;
+			font-size: 2rem;
+			line-height: 1.25;
+		}
+	}
+
+	&__skills {
+		font-size: 1rem;
+		line-height: 1.5;
+		opacity: .8;
+	}
+
+	&__type {
+		font-size: 1rem;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
+	&__location {
+		opacity: .5;
+	}	
+}
