@@ -10,7 +10,7 @@
 	overflow: hidden;
 	&, & * {transition: .2s;}
 
-	@include media-breakpoint-up(lg) {
+	@include media-breakpoint-up(md) {
 		padding: 2rem;
 		margin-bottom: 1.875rem;
 	}

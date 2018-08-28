@@ -44,13 +44,15 @@
     padding-right: 3rem;
     height: calc(100vh - 2rem - 38px);
     justify-content: center;
-    @include media-breakpoint-up(lg) {
-      padding-left: 16.25rem;
-      padding-right: 16.25rem;
+    @include media-breakpoint-up(lg) {      
       height: calc(100vh - 7rem - 24px);
       text-align: right;
       justify-content: flex-end;
       padding-bottom: 6.5rem;
+    }
+    @include media-breakpoint-up(xl) {      
+      padding-left: 16.25rem;
+      padding-right: 16.25rem;
     }
 
     > li.nav-item {
@@ -96,7 +98,7 @@
     font-size: .875rem;    
     text-transform: uppercase;
     text-decoration: none;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       display: none;
     }    
     &:hover {

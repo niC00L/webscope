@@ -13,19 +13,38 @@
 
 <div class="container triangle">
     <div class="row">
-        <div class="col-xl-8 offset-xl-2 works-wrapper">
+        <div class="col-xl-8 offset-xl-2 works-wrapper px-sm-5 px-md-4 px-lg-0">
             <div class="row">
-                <div class="col-lg-6">
-                    @@include('components/project.html', {
-                        "bg-image": "linear-gradient(27deg, #df415b, #d6324d 20%, #c41230)",
-                        "bg-color": "#df415b",
-                        "category": "enterprise",
-                        "image": "img/works/kia/kia-logo.png",
-                        "title": "KIA Motorsport",
-                        "technologies": "React, Angular, Javascript"
-                    })
+                <div class="col-md-6 ">
+                    <div class="row">
+                        @@include('components/project.html', {
+                            "bg-image": "linear-gradient(27deg, #df415b, #d6324d 20%, #c41230)",
+                            "bg-color": "#df415b",
+                            "category": "enterprise",
+                            "image": "img/works/kia/kia-logo.png",
+                            "title": "KIA Motorsport",
+                            "technologies": "React, Angular, Javascript"
+                        })
+                        @@include('components/project.html', {
+                            "bg-image": "linear-gradient(to top, #fcc472, #f7923e)",
+                            "bg-color": "#fcc472",
+                            "category": "enterprise",
+                            "image": "img/works/opoint/opoint.svg",
+                            "title": "Opoint AS",
+                            "technologies": "React, CSS, HTML"
+                        })
+                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 mt-md-5">
+                    <div class="row">
+                    @@include('components/project.html', {
+                        "bg-image": "linear-gradient(to top, #fcc472, #f7923e)",
+                        "bg-color": "#fcc472",
+                        "category": "enterprise",
+                        "image": "img/works/opoint/opoint.svg",
+                        "title": "Opoint AS",
+                        "technologies": "React, CSS, HTML"
+                    })
                     @@include('components/project.html', {
                         "bg-image": "linear-gradient(to top, #fcc472, #f7923e)",
                         "bg-color": "#fcc472",
@@ -35,26 +54,7 @@
                         "technologies": "React, CSS, HTML"
                     })
                 </div>
-                <div class="col-lg-6">
-                    @@include('components/project.html', {
-                        "bg-image": "linear-gradient(to top, #fcc472, #f7923e)",
-                        "bg-color": "#fcc472",
-                        "category": "enterprise",
-                        "image": "img/works/opoint/opoint.svg",
-                        "title": "Opoint AS",
-                        "technologies": "React, CSS, HTML"
-                    })
-                </div>
-                <div class="col-lg-6">
-                    @@include('components/project.html', {
-                        "bg-image": "linear-gradient(to top, #fcc472, #f7923e)",
-                        "bg-color": "#fcc472",
-                        "category": "enterprise",
-                        "image": "img/works/opoint/opoint.svg",
-                        "title": "Opoint AS",
-                        "technologies": "React, CSS, HTML"
-                    })
-                </div>
+            </div>
             </div>
         </div>
     </div>

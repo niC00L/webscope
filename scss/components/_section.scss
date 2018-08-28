@@ -70,7 +70,7 @@
 
   &--gray {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
     > .row {width: 100%;}
     min-height: 37rem;
