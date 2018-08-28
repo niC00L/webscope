@@ -3,7 +3,7 @@
 
 @@include('components/head.html', {"title": "About us"})
 
-<body>
+<body class="page page--about">
 
 <!-- Navigation -->
 @@include('components/navbar.html', {
@@ -122,40 +122,7 @@
 
 <div class="container"><hr/></div> 
 
-<div class="section container brands">
-    <p class="h6 text-center text-uppercase font-weight-bold mb-3 mb-lg-5">
-        Some of brands we are working with
-    </p>
-    <div class="row justify-content-center text-center">
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/kia-motors.svg" alt="kia motors logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/philips.jpg" alt="philips logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/nike.jpg" alt="nike logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/milka.jpg" alt="milka logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/coca-cola.jpg" alt="coca-cola logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/google.jpg" alt="google logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/github.jpg" alt="github logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/dropbox.jpg" alt="dropbox logo" />
-        </div>
-        <div class="col-md-6 col-lg-4 brand">
-            <img src="img/brands/mc.jpg" alt="mailchimp logo" />
-        </div>
-    </div>
-</div>  
+@@include('components/brands.html')
 
 <section class="custom-components section section--small section--dark container mb-lg-4">
     <div class="row justify-content-center">

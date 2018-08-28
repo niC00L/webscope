@@ -21,16 +21,6 @@
   
 }
 
-a {
-  font-weight: 600;
-  font-size: .875em;
-  .icon {
-    margin-left: 1rem;
-    margin-right: .57em;
-    vertical-align: baseline;
-  }
-}
-
 .text-gray {color: $gray-dark;}
 
 body,
@@ -51,8 +41,16 @@ body {
 a {
   color: $primary;
   @include transition-all;
+  font-weight: 600;
+  font-size: .875em;
   &:hover {
-    color: darken($primary, .1);
+    color: darken($primary, 25);
+    text-decoration: none;
+  }
+  .icon {
+    margin-left: 1rem;
+    margin-right: .57em;
+    vertical-align: baseline;
   }
 }
 
@@ -84,8 +82,6 @@ h2, .h2 {
 h6, .h6 {
   font-size: .875rem;
 }
-
-a:hover {color: $primary !important;}
 
 .bg-primary {
   background-color: $primary !important;

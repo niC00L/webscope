@@ -139,3 +139,7 @@ gulp.task('dev', ['css', 'js', 'fileinclude', 'browserSync'], function() {
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./html/**/*.html', ['fileinclude']);
 });
+
+
+
+// node node_modules/gulp/bin/gulp.js dev

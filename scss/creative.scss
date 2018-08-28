@@ -2,6 +2,7 @@
 @import "bootstrap/bootstrap.scss";
 @import "mixins.scss";
 @import "global.scss";
+@import "custom.scss";
 @import "components/section.scss";
 @import "components/navbar.scss";
 @import "components/masthead.scss";
@@ -17,7 +18,10 @@ footer {
 
 .technology {
 	text-align: center;
-	padding: 2.7rem 3rem 0;
+	padding: 1.7rem 2.75rem 0;
+	@include media-breakpoint-up(lg) {
+	padding: 2.7rem 3rem 0;	
+	}
 
 	&__icon {
 		height: 10rem;

@@ -1,0 +1,27 @@
+// Homepage
+
+.section.enterprise {
+	padding-bottom: 1rem;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 2rem;
+	}
+}
+
+
+//Our process
+.page--process {
+	@include media-breakpoint-down(md) {
+		hr {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+//Project detail
+.page--works-detail {
+	.section--gray {
+		min-height: auto;
+	}
+}

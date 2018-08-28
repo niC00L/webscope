@@ -52,5 +52,3 @@
         "gulp-uglify": "3.0.0"
     }
 }
-
-// node node_modules/gulp/bin/gulp.js dev
