@@ -52,6 +52,28 @@
 }
 
 
+// Position
+
+.page--position-detail {
+	.form .section__heading {
+		margin-bottom: 3rem;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 4.938rem;
+		}
+	}
+
+	textarea {height: 7rem;}
+
+	.claim {
+		@include media-breakpoint-down(md) {
+			min-height: auto;
+
+			//.section__text {line-height: 1.5rem;}
+		}
+	}
+}
+
+
 
 
 

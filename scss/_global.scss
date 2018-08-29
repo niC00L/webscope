@@ -135,3 +135,27 @@ img::-moz-selection {
     background-size: auto;
   }
 }
+
+ul {
+  text-align: left;
+  padding-left: 3.5em;
+  list-style: none;
+
+  li {
+    position: relative;
+    line-height: 1.5;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 1em;
+      left: -2.5em;
+      display: inline-block;
+      width: .625em;
+      height: .625em;
+      background: $primary;
+      border-radius: 50%;
+    }
+  }
+}

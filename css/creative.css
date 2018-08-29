@@ -8650,6 +8650,31 @@ img::-moz-selection {
   }
 }
 
+ul {
+  text-align: left;
+  padding-left: 3.5em;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  line-height: 1.5;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: -2.5em;
+  display: inline-block;
+  width: .625em;
+  height: .625em;
+  background: #7cc680;
+  border-radius: 50%;
+}
+
 .section.enterprise {
   padding-bottom: 1rem;
 }
@@ -8687,6 +8712,26 @@ img::-moz-selection {
   .page--contact textarea {
     overflow: hidden;
     height: 3.625em;
+  }
+}
+
+.page--position-detail .form .section__heading {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .page--position-detail .form .section__heading {
+    margin-bottom: 4.938rem;
+  }
+}
+
+.page--position-detail textarea {
+  height: 7rem;
+}
+
+@media (max-width: 991.98px) {
+  .page--position-detail .claim {
+    min-height: auto;
   }
 }
 
@@ -9258,6 +9303,7 @@ img::-moz-selection {
   text-align: left;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 0.25rem;
+  min-width: 17.5rem;
 }
 
 .position:hover {

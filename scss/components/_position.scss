@@ -10,6 +10,7 @@
 	text-align: left;
 	background-color: rgba($white, .1);
 	border-radius: $border-radius;
+	min-width: 17.5rem;
 
 	&:hover {
 		color: $white !important;
