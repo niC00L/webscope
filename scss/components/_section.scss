@@ -71,6 +71,7 @@
   &--gray {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     > .row {width: 100%;}
     min-height: 37rem;
