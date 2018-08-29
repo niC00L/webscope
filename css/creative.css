@@ -8650,20 +8650,20 @@ img::-moz-selection {
   }
 }
 
-ul {
+ul.custom-ul {
   text-align: left;
   padding-left: 3.5em;
   list-style: none;
 }
 
-ul li {
+ul.custom-ul li {
   position: relative;
   line-height: 1.5;
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
-ul li:before {
+ul.custom-ul li:before {
   content: "";
   position: absolute;
   top: 1em;
