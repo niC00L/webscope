@@ -55,8 +55,14 @@ $navbar-padding-x:                  0;
 $btn-border-radius:           $border-radius/2 ;
 $btn-border-radius-lg:        $border-radius-lg/2 ;
 
-$btn-padding-y:               .5rem;
-$btn-padding-x:               2.5rem;
+$btn-padding-y:               1rem;
+$btn-padding-x:               3.5rem;
+
+$btn-padding-y-sm:            .5rem;
+$btn-padding-x-sm:            2.5rem;
+
+//$btn-padding-y-lg:            $input-btn-padding-y-lg !default;
+//$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 
 $btn-font-weight:             600;
 $btn-border-radius-sm:        $border-radius-sm/2 ;

@@ -1,0 +1,127 @@
+// Homepage
+
+.section.enterprise {
+	padding-bottom: 1rem;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 2rem;
+	}
+}
+
+
+//Our process
+.page--process {
+	@include media-breakpoint-down(md) {
+		hr {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+//Project detail
+.page--works-detail {
+	.section--gray.problem {
+		min-height: auto;
+	}
+}
+
+
+//Contact
+
+.page--contact {
+	@include media-breakpoint-down(md) {
+		.hero__text {
+			width: 80%;
+		}
+
+		.section__heading {
+			margin-bottom: 2.5rem;
+		}
+
+		.col-contact:not(:last-child) {
+			margin-bottom: 2.5rem;
+		}
+	}
+	@include media-breakpoint-up(md) {
+		textarea {
+			overflow: hidden;
+			height: 3.625em;
+		}
+	}
+}
+
+
+
+
+
+
+.md-input {
+    position: relative;
+    margin-bottom: 1.5em;
+    border-radius: $border-radius;
+    overflow: hidden;
+ 	.md-form-control {
+        font-size: 1rem;
+        padding: 1.5em 1em .5em .9em;
+        display: block;
+        width: 100%;
+        color: $white;
+        border: none;
+        border-bottom: 2px solid transparent;
+        box-shadow: none;
+        background-color: rgba($white, .1);
+    }
+
+    label {
+        color: rgba($white, 0.5);
+        font-size: 1rem;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: .9em;
+        top: 1em;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+ 	.bar:after {
+        right: 50%;
+    }
+
+    .md-input .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    .md-form-control:focus ~ label, .md-form-control:valid ~ label {
+	    top: .33em;
+	    left: 1.2em;
+	    font-size: .75em;
+	}
+	.md-form-control:focus {outline: none;}
+	.bar:before, .bar:after {
+	    content: '';
+	    height: 2px;
+	    width: 0;
+	    bottom: 0px;
+	    position: absolute;
+	    background: $primary;
+	    transition: 0.2s ease all;
+	    -moz-transition: 0.2s ease all;
+	    -webkit-transition: 0.2s ease all;
+	}
+
+	.md-form-control:focus ~ .bar:before, .md-form-control:focus ~ .bar:after {
+	    width: 50%;
+	}
+}

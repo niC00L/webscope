@@ -19,6 +19,12 @@ $('#mainNav').on('show.bs.collapse', function () {
   $('#mainNav').addClass('open');
 });
 
+$("textarea").on('input', function() {
+  var scroll_height = $("textarea").get(0).scrollHeight;
+
+  $("textarea").css('height', scroll_height + 'px');
+});
+
 $('#mainNav').on('hide.bs.collapse', function () {
   $('#mainNav').removeClass('open');
 });

@@ -64,6 +64,9 @@
     color: $white;
     background-color: $black;
     border-radius: $border-radius;
+    @include media-breakpoint-down(md) {
+      border-radius: 0;
+    }
 
     .section__heading {color: $white;}
   }
@@ -71,6 +74,7 @@
   &--gray {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     > .row {width: 100%;}
     min-height: 37rem;

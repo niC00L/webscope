@@ -16,9 +16,15 @@
   }
 }
 
-.hire-us a {
-  font-size: 1.5rem;
-  
+.hire-us {
+  a {
+    font-size: 1.5rem;
+  }
+  .section--gray {
+    @include media-breakpoint-down(md) {
+      border-radius: 0;
+    }
+  }
 }
 
 .text-gray {color: $gray-dark;}
@@ -31,7 +37,9 @@ html {
 
 .btn {
   text-transform: uppercase;
-  font-size: .875em;
+  &.btn-sm{font-size: .875em;}
+
+  &.btn-primary {color: $white;}
 }
 
 body {
