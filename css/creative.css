@@ -8715,6 +8715,26 @@ ul.custom-ul li:before {
   }
 }
 
+.page--contact .map {
+  height: 25rem;
+}
+
+@media (min-width: 992px) {
+  .page--contact .map {
+    height: 38rem;
+  }
+}
+
+.page--contact .section--gray {
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .page--contact .section--gray {
+    padding-bottom: 6.5rem;
+  }
+}
+
 .page--position-detail .form .section__heading {
   margin-bottom: 3rem;
 }
@@ -9303,7 +9323,6 @@ ul.custom-ul li:before {
   text-align: left;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 0.25rem;
-  min-width: 17.5rem;
 }
 
 .position:hover {

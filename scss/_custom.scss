@@ -49,6 +49,19 @@
 			height: 3.625em;
 		}
 	}
+	.map {
+		height: 25rem;
+		@include media-breakpoint-up(lg) {
+			height: 38rem;
+
+			}
+	}
+	.section--gray {
+		padding-bottom: 3rem;
+				@include media-breakpoint-up(lg) {
+				padding-bottom: 6.5rem;
+}
+	}
 }
 
 
